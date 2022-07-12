@@ -46,7 +46,7 @@ router.post("/login", async(req,res)=>{
             {
                 id: user._id, 
                 isAdmin:user.isAdmin
-            }, process.env.SECRET_KEY, {expiresIn: '5d'})
+            }, process.env.SECRET_KEY)
         
         const {password, ...info} =user._doc
         res.status(200).json({...info, accessToken})
