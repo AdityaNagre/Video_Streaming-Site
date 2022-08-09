@@ -15,6 +15,7 @@ export default function ListItem({ index, movieID }) {
 
   const fetchMovies= async()=>{
     try {
+      console.log(movieID)
       const movieData= await axios.get(`movies/find/${movieID}`)
       setmovie(movieData.data)
     } catch (error) {

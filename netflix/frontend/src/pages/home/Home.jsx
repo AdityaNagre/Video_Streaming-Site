@@ -14,6 +14,7 @@ const Home = (props) => {
       const res= await axios.get(`list${props.type ? "?type=" + props.type :""}${genre?"&genre=" + genre:""}`);
       // const res= await axios.get(`list${props.type ? "?type=" + props.type :""}${genre?"&genre=" + genre:""}`,{header:{token:xyz }  });
       setlists(res.data)
+
     } catch (error) {
       console.log(error.message)
     }
