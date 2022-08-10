@@ -2,6 +2,7 @@ const express= require('express')
 const app= express();
 const mongoose= require('mongoose')
 const dotenv=require('dotenv')
+const port= process.env.PORT || 3000
 
 dotenv.config();
 
@@ -24,6 +25,6 @@ app.use("/api/users", require('./routes/users'))
 app.use("/api/movies", require('./routes/movies'))
 app.use("/api/list", require('./routes/list'))
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log("Server connected at port 3000")
 })

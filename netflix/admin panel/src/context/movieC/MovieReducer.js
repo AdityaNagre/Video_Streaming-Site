@@ -50,7 +50,7 @@ const MovieReducer=(state, action)=>{
                 isFetching: false,
                 error:false
             };
-        case "CRAETE_MOVIE_FAILURE":
+        case "CREATE_MOVIE_FAILURE":
             return{
                 ...state,
                 isFetching: false,
