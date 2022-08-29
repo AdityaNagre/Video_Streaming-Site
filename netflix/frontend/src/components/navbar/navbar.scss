@@ -61,6 +61,12 @@
           padding: 10px;
           cursor: pointer;
         }
+        span:hover{
+          background-color: #d91921;
+        }
+        span:focus{
+          background-color: #d9191fb1;
+        }
 
         &:hover {
           .options {

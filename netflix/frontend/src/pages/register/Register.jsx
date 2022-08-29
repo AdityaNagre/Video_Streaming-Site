@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./register.scss";
 
 export default function Register() {
@@ -8,7 +9,7 @@ export default function Register() {
 
   const emailRef = useRef();
   const passwordRef = useRef();
-
+  
   const handleStart = () => {
     setEmail(emailRef.current.value);
   };
